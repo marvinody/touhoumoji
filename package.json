@@ -1,0 +1,30 @@
+{
+  "name": "touhoumoji",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:build": "nodemon",
+    "dev:serve": "live-server --watch=dist/ --mount=/:dist/",
+    "dev": "concurrently --kill-others \"npm run dev:build\" \"npm run dev:serve\"",
+    "start": "bash build.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.1",
+    "live-server": "^1.2.2"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "dist/*"
+    ],
+    "ext": "js,html,json",
+    "delay": 500
+  }
+}
