@@ -8,6 +8,7 @@ body {
   flex-direction: column;
   max-width: 80%;
   margin: 0 auto;
+  align-items: center;
 }
 
 .title {
@@ -31,18 +32,47 @@ body {
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+
+
+@media (min-width: 576px) {
+  .content {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .content {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .content {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content {
+    max-width: 1140px;
+  }
 }
 
 .entry {
+  flex: 0 0 33%;
+  max-width: 33.333333%;
   background: #443759;
+  padding: 0 15px;
   margin: 0.5rem 0;
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-  padding: 1.25rem;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
   cursor: pointer;
-  border: 1px solid rgba(0,0,0,.125);
+  border: 1px solid rgba(0, 0, 0, .125);
   border-radius: .25rem;
-  min-width: 25%;
-  display:flex;
+  display: flex;
   flex-direction: column;
   word-wrap: break-word;
   position: relative;
@@ -52,6 +82,7 @@ body {
   text-align: center;
   color: white;
   flex: 1 1 auto;
+  padding: 1.25rem;
 }
 
 .emote {
@@ -60,13 +91,13 @@ body {
 }
 
 .toggable .answer {
-	display: none;
-	height: 0;
-	overflow: hidden;
-	transition: height 250ms ease-in-out;
+  display: none;
+  height: 0;
+  overflow: hidden;
+  transition: height 250ms ease-in-out;
 }
 
 .toggable .is-visible {
-	display: block;
-	height: auto;
+  display: block;
+  height: auto;
 }
