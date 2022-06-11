@@ -1,0 +1,72 @@
+body {
+  background-color: #3a284f;
+  font-family: sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.title {
+  color: white;
+}
+
+.title h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+.title h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: italic;
+  margin-top: 0;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.entry {
+  background: #443759;
+  margin: 0.5rem 0;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  padding: 1.25rem;
+  cursor: pointer;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  min-width: 25%;
+  display:flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  position: relative;
+}
+
+.entry-body {
+  text-align: center;
+  color: white;
+  flex: 1 1 auto;
+}
+
+.emote {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.toggable .answer {
+	display: none;
+	height: 0;
+	overflow: hidden;
+	transition: height 250ms ease-in-out;
+}
+
+.toggable .is-visible {
+	display: block;
+	height: auto;
+}

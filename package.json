@@ -24,7 +24,7 @@
     "ignore": [
       "dist/*"
     ],
-    "ext": "js,html,json",
+    "ext": "js,html,json,css",
     "delay": 500
   }
 }
