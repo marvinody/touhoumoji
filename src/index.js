@@ -124,6 +124,8 @@ const addCharacters = (data) => {
     entry.classList.add('toggable', 'entry')
     entry.appendChild(entryBody)
 
+    twemoji.parse(entry)
+
     return entry;    
   })
 
